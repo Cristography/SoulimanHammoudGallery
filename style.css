@@ -760,6 +760,13 @@ footer {
 
 /* --- Mobile Styles --- */
 @media (max-width: 992px) {
+    .header {
+        font-size: 1.4rem;
+        /* Reduce font size from 1.8rem */
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
     .about-container {
         flex-direction: column;
         gap: 60px;
@@ -778,20 +785,60 @@ footer {
         column-count: 2;
     }
 
+    /* --- START OF MODAL FIX --- */
     .modal-content {
         flex-direction: column;
-        max-width: 600px;
-        max-height: 90vh;
+        /* Stacks image on top of text */
+        max-width: 500px;
+        /* A good width for tablets/phones */
+        height: 90vh;
+        /* Use most of the screen height */
+        max-height: 800px;
+        /* But don't get excessively tall */
     }
 
-    .modal-image-container,
+    .modal-image-container {
+        flex: 1 1 auto;
+        /* Allows the image area to grow and shrink */
+        border-radius: 8px 8px 0 0;
+        min-height: 0;
+        /* Important fix for flexbox behavior */
+    }
+
     html[dir="rtl"] .modal-image-container {
         border-radius: 8px 8px 0 0;
+        /* Keep consistent for both LTR/RTL */
     }
 
     .modal-image {
-        max-height: 50vh;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        /* CRITICAL: Ensures the whole image fits without being cropped */
+        max-height: none;
+        /* Remove the old height limit */
     }
+
+    .modal-info {
+        flex: 0 0 auto;
+        /* Prevents the text area from growing */
+        max-height: 35%;
+        /* Limit text area height */
+        overflow-y: auto;
+        /* Make text scrollable if it's long */
+    }
+
+    .header-controls {
+        gap: 1vh;
+
+    }
+
+    #language-toggle {
+        font-size: 0.75rem;
+        padding-top: 2.1x;
+        padding-bottom: 2.1px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -856,5 +903,12 @@ footer {
     html[dir="rtl"] .modal-nav.next {
         left: 5px;
         right: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo {
+        font-size: 1.4rem;
+        /* Reduce font size from 1.8rem */
     }
 }
