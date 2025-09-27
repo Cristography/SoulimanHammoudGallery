@@ -9,14 +9,20 @@
         body {
             font-family: 'Poppins', sans-serif;
             max-width: 800px;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 20px;
-            background-color: #f8f8f8;
+            background-color: #f8f9fa;
             color: #333;
         }
 
         h1 {
             text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #6c757d;
             margin-bottom: 30px;
         }
 
@@ -24,11 +30,11 @@
             background-color: white;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         label {
@@ -37,27 +43,43 @@
             font-weight: 500;
         }
 
-        input[type="file"] {
+        input[type="file"],
+        input[type="text"] {
             display: block;
             width: 100%;
             padding: 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #dee2e6;
             border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        small {
+            display: block;
+            margin-top: 5px;
+            color: #6c757d;
+            font-size: 0.85rem;
         }
 
         button {
-            background-color: #333;
+            background-color: #345c9a;
             color: white;
             border: none;
             padding: 12px 20px;
-            border-radius: 4px;
+            border-radius: 50px;
             cursor: pointer;
             font-size: 16px;
+            font-weight: 500;
             margin-top: 10px;
+            transition: all 0.2s ease;
         }
 
         button:hover {
-            background-color: #555;
+            background-color: #2c4c81;
+            transform: translateY(-2px);
+        }
+
+        button#downloadBtn {
+            background-color: #1a7431;
         }
 
         textarea {
@@ -68,19 +90,20 @@
             border-radius: 4px;
             font-family: monospace;
             margin-top: 20px;
+            box-sizing: border-box;
         }
 
         .result {
             margin-top: 20px;
-            padding: 15px;
-            background-color: #f0f0f0;
-            border-radius: 4px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
             display: none;
         }
 
         .error {
             color: #d9534f;
             margin-top: 10px;
+            font-weight: 500;
             display: none;
         }
     </style>
@@ -89,20 +112,26 @@
 <body>
     <div class="container">
         <h1>Gallery JSON Generator</h1>
-        <p>Select all the image files from your gallery folder to generate the gallery.json file.</p>
+        <p class="intro">Select your images to automatically generate the `gallery.json` file for your portfolio.</p>
 
         <div class="form-group">
-            <label for="imageFiles">Select Image Files:</label>
+            <label for="imageFiles">1. Select Image Files:</label>
             <input type="file" id="imageFiles" multiple accept="image/*">
         </div>
 
         <div class="form-group">
-            <label for="imagePath">Image Path (relative to your HTML file):</label>
-            <input type="text" id="imagePath" value="images/" placeholder="e.g., images/">
+            <label for="fullImagePath">2. Full-Size Image Path:</label>
+            <input type="text" id="fullImagePath" value="images/" placeholder="e.g., images/">
         </div>
 
         <div class="form-group">
-            <label for="description">Default Description:</label>
+            <label for="thumbImagePath">3. Thumbnail Path:</label>
+            <input type="text" id="thumbImagePath" value="images/thumbnails/" placeholder="e.g., images/thumbnails/">
+            <small>This tool assumes thumbnails have the same name as full images, but with a .jpg extension.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="description">4. Default Description:</label>
             <input type="text" id="description"
                 value="A beautiful pencil drawing showcasing intricate details and masterful shading techniques."
                 placeholder="Default description for all images">
@@ -122,7 +151,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const imageFilesInput = document.getElementById('imageFiles');
-            const imagePathInput = document.getElementById('imagePath');
+            const fullImagePathInput = document.getElementById('fullImagePath');
+            const thumbImagePathInput = document.getElementById('thumbImagePath');
             const descriptionInput = document.getElementById('description');
             const generateBtn = document.getElementById('generateBtn');
             const downloadBtn = document.getElementById('downloadBtn');
@@ -130,42 +160,37 @@
             const resultDiv = document.getElementById('result');
             const errorMessage = document.getElementById('errorMessage');
 
-            let galleryData = [];
-
             generateBtn.addEventListener('click', function () {
                 const files = imageFilesInput.files;
-                const imagePath = imagePathInput.value;
+                const fullImagePath = fullImagePathInput.value;
+                const thumbImagePath = thumbImagePathInput.value;
                 const defaultDescription = descriptionInput.value;
+                let galleryData = [];
 
                 if (files.length === 0) {
                     showError('Please select at least one image file.');
                     return;
                 }
 
-                galleryData = [];
+                hideError();
 
                 for (let i = 0; i < files.length; i++) {
                     const file = files[i];
-                    const fileName = file.name;
-                    const fileExtension = fileName.split('.').pop().toLowerCase();
+                    const fullFileName = file.name;
 
-                    // Check if the file is an image
-                    if (!['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(fileExtension)) {
-                        showError(`Skipping ${fileName} - not a supported image format.`);
-                        continue;
-                    }
+                    // Create title from filename (remove extension and replace special characters)
+                    const baseName = fullFileName.substring(0, fullFileName.lastIndexOf('.'));
+                    let title = baseName.replace(/[-_]/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
-                    // Generate title from filename (remove extension and replace dashes/underscores with spaces)
-                    let title = fileName.substring(0, fileName.lastIndexOf('.'));
-                    title = title.replace(/[-_]/g, ' ');
-
-                    // Capitalize the first letter of each word
-                    title = title.replace(/\b\w/g, l => l.toUpperCase());
+                    // Construct the two required image paths
+                    const imageFullPath = fullImagePath + fullFileName;
+                    const imageThumbPath = thumbImagePath + baseName + '.jpg';
 
                     galleryData.push({
                         title: title,
                         description: defaultDescription,
-                        image: imagePath + fileName
+                        image_full: imageFullPath,
+                        image_thumb: imageThumbPath
                     });
                 }
 
@@ -174,34 +199,33 @@
                     return;
                 }
 
+                // Sort the array by title to keep the gallery consistent
+                galleryData.sort((a, b) => a.title.localeCompare(b.title));
+
                 const jsonString = JSON.stringify(galleryData, null, 2);
                 jsonOutput.value = jsonString;
                 resultDiv.style.display = 'block';
                 downloadBtn.style.display = 'inline-block';
-                hideError();
             });
 
             downloadBtn.addEventListener('click', function () {
                 const jsonString = jsonOutput.value;
                 const blob = new Blob([jsonString], { type: 'application/json' });
                 const url = URL.createObjectURL(blob);
-
                 const a = document.createElement('a');
                 a.href = url;
                 a.download = 'gallery.json';
                 document.body.appendChild(a);
                 a.click();
-
-                // Clean up
-                setTimeout(function () {
-                    document.body.removeChild(a);
-                    URL.revokeObjectURL(url);
-                }, 0);
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
             });
 
             function showError(message) {
                 errorMessage.textContent = message;
                 errorMessage.style.display = 'block';
+                resultDiv.style.display = 'none';
+                downloadBtn.style.display = 'none';
             }
 
             function hideError() {
