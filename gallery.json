@@ -1,87 +1,104 @@
 [
   {
     "title": "Art Piece 1",
-    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
-    "image": "images/IMG_0011.png"
+    "description": "A beautiful pencil drawing.",
+    "image_full": "images/IMG_0011.png",
+    "image_thumb": "images/thumbnails/IMG_0011.jpg"
   },
   {
     "title": "Art Piece 2",
-    "description": "This piece explores the contrast between light and shadow, creating a dramatic effect.",
-    "image": "images/IMG_0147.png"
+    "description": "This piece explores contrast.",
+    "image_full": "images/IMG_0147.png",
+    "image_thumb": "images/thumbnails/IMG_0147.jpg"
   },
   {
     "title": "Art Piece 3",
-    "description": "A study in texture and form, rendered with precision in graphite.",
-    "image": "images/IMG_0612.png"
+    "description": "A study in texture and form.",
+    "image_full": "images/IMG_0612.png",
+    "image_thumb": "images/thumbnails/IMG_0612.jpg"
   },
   {
     "title": "Art Piece 4",
-    "description": "Capturing a fleeting moment with delicate and expressive linework.",
-    "image": "images/IMG_1864.png"
+    "description": "Capturing a fleeting moment.",
+    "image_full": "images/IMG_1864.png",
+    "image_thumb": "images/thumbnails/IMG_1864.jpg"
   },
   {
     "title": "Art Piece 5",
-    "description": "A portrait that conveys deep emotion through subtle details in the eyes.",
-    "image": "images/IMG_2192.png"
+    "description": "A portrait that conveys deep emotion.",
+    "image_full": "images/IMG_2192.png",
+    "image_thumb": "images/thumbnails/IMG_2192.jpg"
   },
   {
     "title": "Art Piece 6",
-    "description": "An exploration of abstract shapes and patterns using charcoal.",
-    "image": "images/IMG_2836.PNG"
+    "description": "An exploration of abstract shapes.",
+    "image_full": "images/IMG_2836.PNG",
+    "image_thumb": "images/thumbnails/IMG_2836.jpg"
   },
   {
     "title": "Art Piece 7",
-    "description": "Detailed architectural drawing with a focus on perspective.",
-    "image": "images/IMG_2837.PNG"
+    "description": "Detailed architectural drawing.",
+    "image_full": "images/IMG_2837.PNG",
+    "image_thumb": "images/thumbnails/IMG_2837.jpg"
   },
   {
     "title": "Art Piece 8",
-    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
-    "image": "images/IMG_2838.PNG"
+    "description": "Showcasing intricate details.",
+    "image_full": "images/IMG_2838.PNG",
+    "image_thumb": "images/thumbnails/IMG_2838.jpg"
   },
   {
     "title": "Art Piece 9",
-    "description": "This piece explores the contrast between light and shadow, creating a dramatic effect.",
-    "image": "images/IMG_2839.PNG"
+    "description": "Dramatic light and shadow.",
+    "image_full": "images/IMG_2839.PNG",
+    "image_thumb": "images/thumbnails/IMG_2839.jpg"
   },
   {
     "title": "Art Piece 10",
-    "description": "A study in texture and form, rendered with precision in graphite.",
-    "image": "images/IMG_2840.PNG"
+    "description": "Precision in graphite.",
+    "image_full": "images/IMG_2840.PNG",
+    "image_thumb": "images/thumbnails/IMG_2840.jpg"
   },
   {
     "title": "Art Piece 11",
-    "description": "Capturing a fleeting moment with delicate and expressive linework.",
-    "image": "images/IMG_2842.PNG"
+    "description": "Delicate and expressive linework.",
+    "image_full": "images/IMG_2842.PNG",
+    "image_thumb": "images/thumbnails/IMG_2842.jpg"
   },
   {
     "title": "Art Piece 12",
-    "description": "A portrait that conveys deep emotion through subtle details in the eyes.",
-    "image": "images/IMG_2888.png"
+    "description": "Subtle details in the eyes.",
+    "image_full": "images/IMG_2888.png",
+    "image_thumb": "images/thumbnails/IMG_2888.jpg"
   },
   {
     "title": "Art Piece 13",
-    "description": "An exploration of abstract shapes and patterns using charcoal.",
-    "image": "images/IMG_2894.png"
+    "description": "Patterns using charcoal.",
+    "image_full": "images/IMG_2894.png",
+    "image_thumb": "images/thumbnails/IMG_2894.jpg"
   },
   {
     "title": "Art Piece 14",
-    "description": "Detailed architectural drawing with a focus on perspective.",
-    "image": "images/IMG_2896.png"
+    "description": "A focus on perspective.",
+    "image_full": "images/IMG_2896.png",
+    "image_thumb": "images/thumbnails/IMG_2896.jpg"
   },
   {
     "title": "Art Piece 15",
-    "description": "A beautiful pencil drawing showcasing intricate details.",
-    "image": "images/IMG_4547.PNG"
+    "description": "A beautiful pencil drawing.",
+    "image_full": "images/IMG_4547.PNG",
+    "image_thumb": "images/thumbnails/IMG_4547.jpg"
   },
   {
     "title": "Art Piece 16",
-    "description": "This piece explores the contrast between light and shadow.",
-    "image": "images/IMG_5183.png"
+    "description": "Contrast between light and shadow.",
+    "image_full": "images/IMG_5183.png",
+    "image_thumb": "images/thumbnails/IMG_5183.jpg"
   },
   {
     "title": "Art Piece 17",
-    "description": "A study in texture and form, rendered with precision in graphite.",
-    "image": "images/IMG_6066.PNG"
+    "description": "A study in texture.",
+    "image_full": "images/IMG_6066.PNG",
+    "image_thumb": "images/thumbnails/IMG_6066.jpg"
   }
 ]

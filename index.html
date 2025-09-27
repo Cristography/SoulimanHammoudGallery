@@ -4,7 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artist Gallery - Pencil Art Portfolio</title>
+    <title>Souliman Hammoud - Pencil Art Portfolio</title>
+
+    <!-- SEO and Social Media Meta Tags -->
+    <meta name="description"
+        content="The official art portfolio of Souliman Hammoud, a pencil and charcoal artist specializing in detailed and realistic drawings.">
+    <meta property="og:title" content="Souliman Hammoud - Pencil Art Portfolio">
+    <meta property="og:description"
+        content="Explore a curated collection of stunning pencil drawings by artist Souliman Hammoud.">
+    <meta property="og:type" content="website">
+    <!-- IMPORTANT: Replace the next two URLs with your actual live GitHub Pages URL -->
+    <meta property="og:url" content="https://your-username.github.io/your-repo-name/">
+    <meta property="og:image" content="https://your-username.github.io/your-repo-name/assets/prof1.jpg">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -33,9 +45,8 @@
                     </label>
                 </div>
                 <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span><span class="hamburger-line"></span><span
+                        class="hamburger-line"></span>
                 </button>
             </div>
         </div>
@@ -63,9 +74,7 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container about-container">
-            <div class="about-image">
-                <img src="assets/prof1.jpg" alt="Artist Profile">
-            </div>
+            <div class="about-image"><img src="assets/prof1.jpg" alt="Artist Profile"></div>
             <div class="about-content">
                 <div class="section-title">
                     <h2 data-translate="about_title">About The Artist</h2>
@@ -108,54 +117,39 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="container contact-container">
-            <div class="contact-info">
-                <div class="section-title">
-                    <h2 data-translate="contact_title">Get In Touch</h2>
-                    <p data-translate="contact_subtitle">Inquiries about commissions and artwork</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
+        <div class="container contact-container-direct">
+            <div class="section-title">
+                <h2 data-translate="contact_title">Get In Touch</h2>
+                <p data-translate="contact_subtitle">Inquiries about commissions and artwork</p>
+            </div>
+            <div class="contact-info-direct">
+                <div class="contact-item"><i class="fas fa-map-marker-alt"></i>
                     <div>
                         <h4 data-translate="contact_location">Studio Location</h4>
                         <p data-translate="contact_location_val">123 Art District, Barcelona, Spain</p>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
+                <div class="contact-item"><i class="fas fa-envelope"></i>
                     <div>
                         <h4 data-translate="contact_email">Email</h4>
                         <p data-translate="contact_email_val">hello@artistgallery.com</p>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-clock"></i>
+                <div class="contact-item"><i class="fas fa-clock"></i>
                     <div>
                         <h4 data-translate="contact_hours">Studio Hours</h4>
                         <p data-translate="contact_hours_val">Monday - Friday: 10am - 6pm</p>
                     </div>
                 </div>
             </div>
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" required placeholder=" ">
-                        <label for="name" data-translate="form_name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required placeholder=" ">
-                        <label for="email" data-translate="form_email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" required placeholder=" ">
-                        <label for="subject" data-translate="form_subject">Subject</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" required placeholder=" "></textarea>
-                        <label for="message" data-translate="form_message">Message</label>
-                    </div>
-                    <button type="submit" class="submit-btn" data-translate="form_submit">Send Message</button>
-                </form>
+            <div class="contact-cta-container">
+                <p>Ready to discuss a project or have a question? Message me directly on Telegram for a quick response.
+                </p>
+                <!-- IMPORTANT: Replace YOUR_USERNAME with your actual Telegram username -->
+                <a href="https://t.me/YOUR_USERNAME" target="_blank" rel="noopener noreferrer"
+                    class="cta-button telegram-button">
+                    <i class="fab fa-telegram-plane"></i> Contact Me on Telegram
+                </a>
             </div>
         </div>
     </section>
@@ -163,15 +157,15 @@
     <!-- Modal for viewing artwork -->
     <div class="modal" id="artModal">
         <span class="close-modal" id="closeModal">&times;</span>
+        <button class="modal-nav prev" id="prevArt" aria-label="Previous image">&#10094;</button>
         <div class="modal-content">
-            <div class="modal-image-container">
-                <img src="" alt="" class="modal-image" id="modalImage">
-            </div>
+            <div class="modal-image-container"><img src="" alt="" class="modal-image" id="modalImage"></div>
             <div class="modal-info">
                 <h3 id="modalTitle"></h3>
                 <p id="modalDescription"></p>
             </div>
         </div>
+        <button class="modal-nav next" id="nextArt" aria-label="Next image">&#10095;</button>
     </div>
 
     <!-- Footer -->
@@ -183,24 +177,30 @@
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
             </div>
-            <p class="copyright" data-translate="footer_copyright">&copy; 2024 Artist Gallery. All rights reserved.</p>
+            <p class="copyright" data-translate="footer_copyright">&copy; 2025 Souliman Hammoud. All rights reserved.
+            </p>
         </div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // DOM Elements
+            // --- Gallery and Modal State ---
+            let galleryData = [];
+            let currentIndex = 0;
+
+            // --- DOM Elements ---
             const galleryContainer = document.getElementById('galleryContainer');
             const artModal = document.getElementById('artModal');
             const closeModalBtn = document.getElementById('closeModal');
             const modalImage = document.getElementById('modalImage');
             const modalTitle = document.getElementById('modalTitle');
             const modalDescription = document.getElementById('modalDescription');
-            const contactForm = document.getElementById('contactForm');
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const mobileNav = document.getElementById('mobile-nav');
             const darkModeToggle = document.getElementById('dark-mode-toggle');
             const languageToggle = document.getElementById('language-toggle');
+            const prevArtBtn = document.getElementById('prevArt');
+            const nextArtBtn = document.getElementById('nextArt');
 
             let translations = {};
             let currentLanguage = localStorage.getItem('language') || 'en';
@@ -211,16 +211,13 @@
                     const response = await fetch('translation.json');
                     translations = await response.json();
                     setLanguage(currentLanguage);
-                } catch (error) {
-                    console.error('Could not load translations:', error);
-                }
+                } catch (error) { console.error('Could not load translations:', error); }
             }
 
             function setLanguage(lang) {
                 currentLanguage = lang;
                 localStorage.setItem('language', lang);
-                const elements = document.querySelectorAll('[data-translate]');
-                elements.forEach(el => {
+                document.querySelectorAll('[data-translate]').forEach(el => {
                     const key = el.getAttribute('data-translate');
                     if (translations[key] && translations[key][lang]) {
                         el.textContent = translations[key][lang];
@@ -230,52 +227,30 @@
                 document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
                 languageToggle.textContent = lang === 'en' ? 'AR' : 'EN';
             }
-
-            languageToggle.addEventListener('click', () => {
-                const newLang = currentLanguage === 'en' ? 'ar' : 'en';
-                setLanguage(newLang);
-            });
+            languageToggle.addEventListener('click', () => setLanguage(currentLanguage === 'en' ? 'ar' : 'en'));
 
             // --- Dark Mode ---
             function applyTheme(theme) {
-                if (theme === 'dark') {
-                    document.body.classList.add('dark-mode');
-                    darkModeToggle.checked = true;
-                } else {
-                    document.body.classList.remove('dark-mode');
-                    darkModeToggle.checked = false;
-                }
+                document.body.classList.toggle('dark-mode', theme === 'dark');
+                darkModeToggle.checked = theme === 'dark';
             }
-
             darkModeToggle.addEventListener('change', () => {
                 const theme = darkModeToggle.checked ? 'dark' : 'light';
                 localStorage.setItem('theme', theme);
                 applyTheme(theme);
             });
-
-            // Initialize theme on page load
             const savedTheme = localStorage.getItem('theme');
             const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
             applyTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
 
-            // --- Header Scroll Effect ---
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    document.body.classList.add('scrolled');
-                } else {
-                    document.body.classList.remove('scrolled');
-                }
-            });
-
-            // --- Mobile Menu Toggle ---
-            hamburgerMenu.addEventListener('click', function () {
-                this.classList.toggle('active');
+            // --- Header & Mobile Menu ---
+            window.addEventListener('scroll', () => document.body.classList.toggle('scrolled', window.scrollY > 50));
+            hamburgerMenu.addEventListener('click', () => {
+                hamburgerMenu.classList.toggle('active');
                 mobileNav.classList.toggle('active');
                 document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
             });
-
-            const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
-            mobileNavLinks.forEach(link => {
+            document.querySelectorAll('.mobile-nav a').forEach(link => {
                 link.addEventListener('click', () => {
                     hamburgerMenu.classList.remove('active');
                     mobileNav.classList.remove('active');
@@ -288,22 +263,16 @@
                 try {
                     const response = await fetch('gallery.json');
                     if (!response.ok) throw new Error('Gallery data not found.');
-                    const galleryData = await response.json();
+                    galleryData = await response.json();
 
                     const masonryGallery = document.createElement('div');
                     masonryGallery.className = 'masonry-gallery';
 
-                    galleryData.forEach(art => {
+                    galleryData.forEach((art, index) => {
                         const galleryItem = document.createElement('div');
                         galleryItem.className = 'gallery-item';
-                        galleryItem.innerHTML = `
-                            <img src="${art.image}" alt="${art.title}" loading="lazy">
-                            <div class="gallery-info">
-                                <h3>${art.title}</h3>
-                                <p>${art.description.substring(0, 80)}...</p>
-                            </div>
-                        `;
-                        galleryItem.addEventListener('click', () => openModal(art));
+                        galleryItem.innerHTML = `<img src="${art.image_thumb}" alt="${art.title}" loading="lazy"><div class="gallery-info"><h3>${art.title}</h3></div>`;
+                        galleryItem.addEventListener('click', () => openModal(index));
                         masonryGallery.appendChild(galleryItem);
                     });
 
@@ -316,11 +285,17 @@
             }
 
             // --- Modal Functionality ---
-            function openModal(art) {
-                modalImage.src = art.image;
+            function updateModalContent(index) {
+                const art = galleryData[index];
+                modalImage.src = art.image_full;
                 modalImage.alt = art.title;
                 modalTitle.textContent = art.title;
                 modalDescription.textContent = art.description;
+                currentIndex = index;
+            }
+
+            function openModal(index) {
+                updateModalContent(index);
                 artModal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
             }
@@ -330,29 +305,37 @@
                 document.body.style.overflow = 'auto';
             }
 
-            closeModalBtn.addEventListener('click', closeModal);
-            window.addEventListener('click', (e) => { if (e.target === artModal) closeModal(); });
-            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+            function showNextArt() {
+                const nextIndex = (currentIndex + 1) % galleryData.length;
+                updateModalContent(nextIndex);
+            }
 
-            // --- Contact Form Handling ---
-            contactForm.addEventListener('submit', function (e) {
-                e.preventDefault();
-                // Form submission logic here (e.g., using fetch to send data)
-                alert('Thank you for your message!');
-                this.reset();
+            function showPrevArt() {
+                const prevIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
+                updateModalContent(prevIndex);
+            }
+
+            closeModalBtn.addEventListener('click', closeModal);
+            nextArtBtn.addEventListener('click', showNextArt);
+            prevArtBtn.addEventListener('click', showPrevArt);
+            window.addEventListener('click', (e) => { if (e.target === artModal) closeModal(); });
+            document.addEventListener('keydown', (e) => {
+                if (artModal.style.display === 'block') {
+                    if (e.key === 'Escape') closeModal();
+                    if (e.key === 'ArrowRight') showNextArt();
+                    if (e.key === 'ArrowLeft') showPrevArt();
+                }
             });
 
             // --- Smooth Scrolling ---
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
                 });
             });
 
-            // Initialize everything
+            // Initialize
             loadTranslations();
             loadGallery();
         });

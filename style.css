@@ -57,7 +57,6 @@ ul {
     --shadow-medium: rgba(0, 0, 0, 0.1);
     --modal-bg: rgba(248, 249, 250, 0.9);
     --header-bg: rgba(255, 255, 255, 0.95);
-
     --font-size-h1: clamp(3rem, 8vw, 4.5rem);
     --font-size-h2: clamp(2.2rem, 6vw, 2.8rem);
     --header-height: 80px;
@@ -326,7 +325,6 @@ input:checked+.slider:before {
     color: white;
     height: 100vh;
     height: 100dvh;
-    /* Dynamic viewport height for mobile */
 }
 
 .hero-content h1 {
@@ -500,11 +498,6 @@ html[dir="rtl"] .about-content .section-title {
     font-weight: 600;
 }
 
-.gallery-info p {
-    font-size: 0.9rem;
-    opacity: 0.9;
-}
-
 /* --- Loading Spinner --- */
 .loading {
     display: flex;
@@ -528,34 +521,29 @@ html[dir="rtl"] .about-content .section-title {
     }
 }
 
-/* --- Contact Section --- */
+/* --- Direct Contact Section --- */
 .contact {
     background-color: var(--surface-color);
 }
 
-.contact-container {
+.contact-container-direct {
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-info-direct {
     display: flex;
-    gap: 80px;
-}
-
-.contact-info,
-.contact-form {
-    flex: 1;
-}
-
-.contact-info .section-title {
-    text-align: left;
-}
-
-html[dir="rtl"] .contact-info .section-title {
-    text-align: right;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 30px;
     gap: 20px;
+    text-align: left;
 }
 
 .contact-item i {
@@ -575,88 +563,31 @@ html[dir="rtl"] .contact-info .section-title {
     color: var(--text-secondary);
 }
 
-.form-group {
-    position: relative;
-    margin-bottom: 30px;
+.contact-cta-container {
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 40px;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    background-color: var(--bg-color);
-    transition: var(--transition-fast);
-    font-size: 1rem;
-    color: var(--text-primary);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 140px;
-}
-
-.form-group label {
-    position: absolute;
-    top: 12px;
-    left: 12px;
+.contact-cta-container p {
     color: var(--text-secondary);
-    pointer-events: none;
-    transition: var(--transition-fast);
+    max-width: 500px;
+    margin: 0 auto 30px;
 }
 
-html[dir="rtl"] .form-group label {
-    left: auto;
-    right: 12px;
+.telegram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2AABEE;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(52, 92, 154, 0.1);
+.telegram-button:hover {
+    background-color: #229ED9;
 }
 
-body.dark-mode .form-group input:focus {
-    box-shadow: 0 0 0 3px rgba(91, 138, 213, 0.2);
-}
-
-.form-group input:focus+label,
-.form-group textarea:focus+label,
-.form-group input:not(:placeholder-shown)+label,
-.form-group textarea:not(:placeholder-shown)+label {
-    top: -10px;
-    font-size: 0.8rem;
-    background-color: var(--surface-color);
-    padding: 0 5px;
-    color: var(--accent-color);
-}
-
-html[dir="ltr"] .form-group input:focus+label,
-html[dir="ltr"] .form-group input:not(:placeholder-shown)+label {
-    left: 10px;
-}
-
-html[dir="rtl"] .form-group input:focus+label,
-html[dir="rtl"] .form-group input:not(:placeholder-shown)+label {
-    right: 10px;
-}
-
-.submit-btn {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: var(--transition-fast);
-}
-
-.submit-btn:hover {
-    background-color: #2c4c81;
-    transform: translateY(-2px);
+html[dir="rtl"] .contact-item {
+    text-align: right;
 }
 
 /* --- Modal Styles --- */
@@ -700,10 +631,6 @@ body.dark-mode .modal-image-container {
     background-color: #121212;
 }
 
-html[dir="rtl"] .modal-image-container {
-    border-radius: 0 8px 8px 0;
-}
-
 .modal-image {
     max-width: 100%;
     max-height: 85vh;
@@ -737,14 +664,56 @@ html[dir="rtl"] .modal-image-container {
     transition: var(--transition-fast);
 }
 
+.close-modal:hover {
+    transform: rotate(90deg);
+    color: var(--accent-color);
+}
+
+.modal-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 15px 10px;
+    z-index: 2002;
+    transition: background-color 0.2s ease;
+    border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.modal-nav:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-nav.prev {
+    left: 15px;
+}
+
+.modal-nav.next {
+    right: 15px;
+}
+
+html[dir="rtl"] .modal-image-container {
+    border-radius: 0 8px 8px 0;
+}
+
 html[dir="rtl"] .close-modal {
     right: auto;
     left: 20px;
 }
 
-.close-modal:hover {
-    transform: rotate(90deg);
-    color: var(--accent-color);
+html[dir="rtl"] .modal-nav.prev {
+    left: auto;
+    right: 15px;
+}
+
+html[dir="rtl"] .modal-nav.next {
+    right: auto;
+    left: 15px;
 }
 
 @keyframes modalFadeIn {
@@ -791,17 +760,13 @@ footer {
 
 /* --- Mobile Styles --- */
 @media (max-width: 992px) {
-
-    .about-container,
-    .contact-container {
+    .about-container {
         flex-direction: column;
         gap: 60px;
     }
 
     .about-content .section-title,
-    .contact-info .section-title,
-    html[dir="rtl"] .about-content .section-title,
-    html[dir="rtl"] .contact-info .section-title {
+    html[dir="rtl"] .about-content .section-title {
         text-align: center;
     }
 
@@ -863,14 +828,33 @@ footer {
         gap: 20px;
         text-align: center;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        width: 95%;
+    .contact-info-direct {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
     }
 
-    .header-controls {
-        gap: 10px;
+    .modal-nav {
+        padding: 10px 5px;
+        font-size: 1.5rem;
+    }
+
+    .modal-nav.prev {
+        left: 5px;
+    }
+
+    .modal-nav.next {
+        right: 5px;
+    }
+
+    html[dir="rtl"] .modal-nav.prev {
+        right: 5px;
+        left: auto;
+    }
+
+    html[dir="rtl"] .modal-nav.next {
+        left: 5px;
+        right: auto;
     }
 }
