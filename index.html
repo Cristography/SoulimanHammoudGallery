@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -15,40 +15,48 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <div class="logo"><a href="#home">Souliman Hammoud</a></div>
+            <div class="logo"><a href="#home" data-translate="artist_name">Souliman Hammoud</a></div>
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" data-translate="nav_home">Home</a></li>
+                    <li><a href="#about" data-translate="nav_about">About</a></li>
+                    <li><a href="#gallery" data-translate="nav_gallery">Gallery</a></li>
+                    <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
                 </ul>
             </nav>
-            <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="header-controls">
+                <button id="language-toggle" aria-label="Toggle Language">AR</button>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="dark-mode-toggle">
+                        <input type="checkbox" id="dark-mode-toggle" />
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <!-- Mobile Navigation -->
     <nav class="mobile-nav" id="mobile-nav">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" data-translate="nav_home">Home</a></li>
+            <li><a href="#about" data-translate="nav_about">About</a></li>
+            <li><a href="#gallery" data-translate="nav_gallery">Gallery</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Modern Art Gallery</h1>
-            <p>Explore the creative world of contemporary art through this curated collection of stunning visual
-                masterpieces.</p>
-            <a href="#gallery" class="cta-button">View Gallery</a>
+            <h1 data-translate="hero_title">Modern Art Gallery</h1>
+            <p data-translate="hero_subtitle">Explore the creative world of contemporary art...</p>
+            <a href="#gallery" class="cta-button" data-translate="hero_cta">View Gallery</a>
         </div>
     </section>
 
@@ -60,31 +68,23 @@
             </div>
             <div class="about-content">
                 <div class="section-title">
-                    <h2>About The Artist</h2>
-                    <p>Dedicated to the craft of pencil drawing</p>
+                    <h2 data-translate="about_title">About The Artist</h2>
+                    <p data-translate="about_subtitle">Dedicated to the craft of pencil drawing</p>
                 </div>
-                <p class="about-text">
-                    With a focus on graphite and charcoal, I create detailed drawings that capture the essence of my
-                    subjects. My work explores the interplay of light and shadow, bringing depth and emotion to each
-                    piece.
-                </p>
-                <p class="about-text">
-                    My artistic journey began with a simple pencil and sketchbook, evolving over years of practice to
-                    develop a style that emphasizes realism and attention to detail. Each drawing is a meditation on
-                    form and texture.
-                </p>
+                <p class="about-text" data-translate="about_p1">With a focus on graphite and charcoal...</p>
+                <p class="about-text" data-translate="about_p2">My artistic journey began with a simple pencil...</p>
                 <div class="about-details">
                     <div class="detail-item">
-                        <h4>Experience</h4>
-                        <p>10+ Years</p>
+                        <h4 data-translate="about_experience">Experience</h4>
+                        <p data-translate="about_experience_val">10+ Years</p>
                     </div>
                     <div class="detail-item">
-                        <h4>Exhibitions</h4>
-                        <p>25+ Shows</p>
+                        <h4 data-translate="about_exhibitions">Exhibitions</h4>
+                        <p data-translate="about_exhibitions_val">25+ Shows</p>
                     </div>
                     <div class="detail-item">
-                        <h4>Medium</h4>
-                        <p>Pencil & Charcoal</p>
+                        <h4 data-translate="about_medium">Medium</h4>
+                        <p data-translate="about_medium_val">Pencil & Charcoal</p>
                     </div>
                 </div>
             </div>
@@ -95,8 +95,8 @@
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-title">
-                <h2>Art Collection</h2>
-                <p>A curated selection of pencil drawings showcasing various techniques and subjects.</p>
+                <h2 data-translate="gallery_title">Art Collection</h2>
+                <p data-translate="gallery_subtitle">A curated selection of pencil drawings...</p>
             </div>
             <div id="galleryContainer">
                 <div class="loading">
@@ -111,50 +111,50 @@
         <div class="container contact-container">
             <div class="contact-info">
                 <div class="section-title">
-                    <h2>Get In Touch</h2>
-                    <p>Inquiries about commissions and artwork</p>
+                    <h2 data-translate="contact_title">Get In Touch</h2>
+                    <p data-translate="contact_subtitle">Inquiries about commissions and artwork</p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <h4>Studio Location</h4>
-                        <p>123 Art District, Barcelona, Spain</p>
+                        <h4 data-translate="contact_location">Studio Location</h4>
+                        <p data-translate="contact_location_val">123 Art District, Barcelona, Spain</p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <h4>Email</h4>
-                        <p>hello@artistgallery.com</p>
+                        <h4 data-translate="contact_email">Email</h4>
+                        <p data-translate="contact_email_val">hello@artistgallery.com</p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-clock"></i>
                     <div>
-                        <h4>Studio Hours</h4>
-                        <p>Monday - Friday: 10am - 6pm</p>
+                        <h4 data-translate="contact_hours">Studio Hours</h4>
+                        <p data-translate="contact_hours_val">Monday - Friday: 10am - 6pm</p>
                     </div>
                 </div>
             </div>
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="form-group">
-                        <input type="text" id="name" required placeholder="Your Name">
-                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name" data-translate="form_name">Your Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" required placeholder="Your Email">
-                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email" data-translate="form_email">Your Email</label>
                     </div>
                     <div class="form-group">
-                        <input type="text" id="subject" required placeholder="Subject">
-                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required placeholder=" ">
+                        <label for="subject" data-translate="form_subject">Subject</label>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" required placeholder="Message"></textarea>
-                        <label for="message">Message</label>
+                        <textarea id="message" required placeholder=" "></textarea>
+                        <label for="message" data-translate="form_message">Message</label>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="submit-btn" data-translate="form_submit">Send Message</button>
                 </form>
             </div>
         </div>
@@ -183,7 +183,7 @@
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
             </div>
-            <p class="copyright">&copy; 2024 Artist Gallery. All rights reserved.</p>
+            <p class="copyright" data-translate="footer_copyright">&copy; 2024 Artist Gallery. All rights reserved.</p>
         </div>
     </footer>
 
@@ -199,7 +199,64 @@
             const contactForm = document.getElementById('contactForm');
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const mobileNav = document.getElementById('mobile-nav');
-            const header = document.querySelector('header');
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const languageToggle = document.getElementById('language-toggle');
+
+            let translations = {};
+            let currentLanguage = localStorage.getItem('language') || 'en';
+
+            // --- Language and Translation ---
+            async function loadTranslations() {
+                try {
+                    const response = await fetch('translation.json');
+                    translations = await response.json();
+                    setLanguage(currentLanguage);
+                } catch (error) {
+                    console.error('Could not load translations:', error);
+                }
+            }
+
+            function setLanguage(lang) {
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+                const elements = document.querySelectorAll('[data-translate]');
+                elements.forEach(el => {
+                    const key = el.getAttribute('data-translate');
+                    if (translations[key] && translations[key][lang]) {
+                        el.textContent = translations[key][lang];
+                    }
+                });
+                document.documentElement.lang = lang;
+                document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+                languageToggle.textContent = lang === 'en' ? 'AR' : 'EN';
+            }
+
+            languageToggle.addEventListener('click', () => {
+                const newLang = currentLanguage === 'en' ? 'ar' : 'en';
+                setLanguage(newLang);
+            });
+
+            // --- Dark Mode ---
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.body.classList.add('dark-mode');
+                    darkModeToggle.checked = true;
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    darkModeToggle.checked = false;
+                }
+            }
+
+            darkModeToggle.addEventListener('change', () => {
+                const theme = darkModeToggle.checked ? 'dark' : 'light';
+                localStorage.setItem('theme', theme);
+                applyTheme(theme);
+            });
+
+            // Initialize theme on page load
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(savedTheme || (prefersDark ? 'dark' : 'light'));
 
             // --- Header Scroll Effect ---
             window.addEventListener('scroll', () => {
@@ -214,16 +271,9 @@
             hamburgerMenu.addEventListener('click', function () {
                 this.classList.toggle('active');
                 mobileNav.classList.toggle('active');
-
-                // Prevent body scroll when menu is open
-                if (mobileNav.classList.contains('active')) {
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    document.body.style.overflow = '';
-                }
+                document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
             });
 
-            // Close mobile menu when clicking on nav links
             const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
             mobileNavLinks.forEach(link => {
                 link.addEventListener('click', () => {
@@ -233,34 +283,12 @@
                 });
             });
 
-            // Close mobile menu when clicking outside
-            mobileNav.addEventListener('click', function (e) {
-                if (e.target === this) {
-                    hamburgerMenu.classList.remove('active');
-                    mobileNav.classList.remove('active');
-                    document.body.style.overflow = '';
-                }
-            });
-
             // --- Gallery Loading ---
             async function loadGallery() {
                 try {
-                    let galleryData;
-                    try {
-                        const response = await fetch('gallery.json');
-                        if (!response.ok) throw new Error('Gallery data not found, using fallback.');
-                        galleryData = await response.json();
-                    } catch (error) {
-                        console.warn(error.message);
-                        galleryData = [
-                            { title: "Portrait Study", description: "A detailed portrait capturing the subtle expressions and character of the subject through careful shading and linework.", image: "https://picsum.photos/seed/pencil1/400/600" },
-                            { title: "Urban Landscape", description: "Cityscape drawing showcasing architectural details and the play of light on urban structures.", image: "https://picsum.photos/seed/pencil2/400/500" },
-                            { title: "Natural Form", description: "Study of organic shapes found in nature, emphasizing texture and intricate details.", image: "https://picsum.photos/seed/pencil3/400/700" },
-                            { title: "Still Life", description: "Composition of everyday objects arranged to create visual harmony and balance.", image: "https://picsum.photos/seed/pencil4/400/450" },
-                            { title: "Figure Drawing", description: "Human form study focusing on anatomy, proportion, and the subtle curves of the body.", image: "https://picsum.photos/seed/pencil5/400/650" },
-                            { title: "Abstract Composition", description: "Exploration of form and space through abstract elements created with graphite and charcoal.", image: "https://picsum.photos/seed/pencil6/400/550" }
-                        ];
-                    }
+                    const response = await fetch('gallery.json');
+                    if (!response.ok) throw new Error('Gallery data not found.');
+                    const galleryData = await response.json();
 
                     const masonryGallery = document.createElement('div');
                     masonryGallery.className = 'masonry-gallery';
@@ -269,12 +297,12 @@
                         const galleryItem = document.createElement('div');
                         galleryItem.className = 'gallery-item';
                         galleryItem.innerHTML = `
-                        <img src="${art.image}" alt="${art.title}" loading="lazy">
-                        <div class="gallery-info">
-                            <h3>${art.title}</h3>
-                            <p>${art.description.substring(0, 80)}...</p>
-                        </div>
-                    `;
+                            <img src="${art.image}" alt="${art.title}" loading="lazy">
+                            <div class="gallery-info">
+                                <h3>${art.title}</h3>
+                                <p>${art.description.substring(0, 80)}...</p>
+                            </div>
+                        `;
                         galleryItem.addEventListener('click', () => openModal(art));
                         masonryGallery.appendChild(galleryItem);
                     });
@@ -283,7 +311,7 @@
                     galleryContainer.appendChild(masonryGallery);
                 } catch (error) {
                     console.error('Error loading gallery:', error);
-                    galleryContainer.innerHTML = '<p style="text-align:center;">Failed to load gallery. Please try again later.</p>';
+                    galleryContainer.innerHTML = '<p style="text-align:center;">Failed to load gallery.</p>';
                 }
             }
 
@@ -303,70 +331,29 @@
             }
 
             closeModalBtn.addEventListener('click', closeModal);
-            window.addEventListener('click', (e) => {
-                if (e.target === artModal) closeModal();
-            });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && artModal.style.display === 'block') closeModal();
-            });
+            window.addEventListener('click', (e) => { if (e.target === artModal) closeModal(); });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
 
             // --- Contact Form Handling ---
-            function handleContactForm(e) {
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                const name = document.getElementById('name').value;
-                const notification = document.createElement('div');
-                notification.textContent = `Thank you, ${name}! Your message has been sent.`;
-                notification.style.cssText = `
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background-color: var(--accent-color);
-                color: white;
-                padding: 15px 25px;
-                border-radius: 5px;
-                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-                z-index: 4000;
-                opacity: 0;
-                transform: translateY(20px);
-                transition: all 0.4s ease;
-            `;
-                document.body.appendChild(notification);
-
-                setTimeout(() => {
-                    notification.style.opacity = '1';
-                    notification.style.transform = 'translateY(0)';
-                }, 10);
-
-                contactForm.reset();
-
-                setTimeout(() => {
-                    notification.style.opacity = '0';
-                    notification.style.transform = 'translateY(20px)';
-                    setTimeout(() => document.body.removeChild(notification), 400);
-                }, 4000);
-            }
-            contactForm.addEventListener('submit', handleContactForm);
+                // Form submission logic here (e.g., using fetch to send data)
+                alert('Thank you for your message!');
+                this.reset();
+            });
 
             // --- Smooth Scrolling ---
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        const headerOffset = document.querySelector('header').offsetHeight;
-                        const elementPosition = targetElement.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 });
             });
 
-            // Initialize gallery
+            // Initialize everything
+            loadTranslations();
             loadGallery();
         });
     </script>

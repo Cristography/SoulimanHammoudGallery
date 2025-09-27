@@ -1,0 +1,138 @@
+{
+    "nav_home": {
+        "en": "Home",
+        "ar": "الرئيسية"
+    },
+    "nav_about": {
+        "en": "About",
+        "ar": "عني"
+    },
+    "nav_gallery": {
+        "en": "Gallery",
+        "ar": "المعرض"
+    },
+    "nav_contact": {
+        "en": "Contact",
+        "ar": "تواصل"
+    },
+    "artist_name": {
+        "en": "Souliman Hammoud",
+        "ar": "سليمان حمود"
+    },
+    "hero_title": {
+        "en": "Modern Art Gallery",
+        "ar": "معرض الفن الحديث"
+    },
+    "hero_subtitle": {
+        "en": "Explore the creative world of contemporary art through this curated collection of stunning visual masterpieces.",
+        "ar": "استكشف العالم الإبداعي للفن المعاصر من خلال هذه المجموعة المنسقة من روائع بصرية مذهلة."
+    },
+    "hero_cta": {
+        "en": "View Gallery",
+        "ar": "شاهد المعرض"
+    },
+    "about_title": {
+        "en": "About The Artist",
+        "ar": "عن الفنان"
+    },
+    "about_subtitle": {
+        "en": "Dedicated to the craft of pencil drawing",
+        "ar": "مكرس لفن الرسم بالقلم الرصاص"
+    },
+    "about_p1": {
+        "en": "With a focus on graphite and charcoal, I create detailed drawings that capture the essence of my subjects. My work explores the interplay of light and shadow, bringing depth and emotion to each piece.",
+        "ar": "مع التركيز على الجرافيت والفحم، أقوم بإنشاء رسومات مفصلة تجسد جوهر مواضيعي. يستكشف عملي التفاعل بين الضوء والظل، مما يضفي عمقًا وعاطفة على كل قطعة."
+    },
+    "about_p2": {
+        "en": "My artistic journey began with a simple pencil and sketchbook, evolving over years of practice to develop a style that emphasizes realism and attention to detail. Each drawing is a meditation on form and texture.",
+        "ar": "بدأت رحلتي الفنية بقلم رصاص بسيط وكراسة رسم، وتطورت على مر السنين من الممارسة لتطوير أسلوب يؤكد على الواقعية والاهتمام بالتفاصيل. كل رسم هو تأمل في الشكل والملمس."
+    },
+    "about_experience": {
+        "en": "Experience",
+        "ar": "الخبرة"
+    },
+    "about_experience_val": {
+        "en": "10+ Years",
+        "ar": "10+ سنوات"
+    },
+    "about_exhibitions": {
+        "en": "Exhibitions",
+        "ar": "المعارض"
+    },
+    "about_exhibitions_val": {
+        "en": "25+ Shows",
+        "ar": "25+ معرضًا"
+    },
+    "about_medium": {
+        "en": "Medium",
+        "ar": "الوسيط"
+    },
+    "about_medium_val": {
+        "en": "Pencil & Charcoal",
+        "ar": "قلم رصاص وفحم"
+    },
+    "gallery_title": {
+        "en": "Art Collection",
+        "ar": "المجموعة الفنية"
+    },
+    "gallery_subtitle": {
+        "en": "A curated selection of pencil drawings showcasing various techniques and subjects.",
+        "ar": "مجموعة منسقة من رسومات القلم الرصاص تعرض تقنيات ومواضيع مختلفة."
+    },
+    "contact_title": {
+        "en": "Get In Touch",
+        "ar": "تواصل معنا"
+    },
+    "contact_subtitle": {
+        "en": "Inquiries about commissions and artwork",
+        "ar": "للاستفسارات حول الطلبات الخاصة والأعمال الفنية"
+    },
+    "contact_location": {
+        "en": "Studio Location",
+        "ar": "موقع الاستوديو"
+    },
+    "contact_location_val": {
+        "en": "123 Art District, Barcelona, Spain",
+        "ar": "123 حي الفن، برشلونة، إسبانيا"
+    },
+    "contact_email": {
+        "en": "Email",
+        "ar": "البريد الإلكتروني"
+    },
+    "contact_email_val": {
+        "en": "hello@artistgallery.com",
+        "ar": "hello@artistgallery.com"
+    },
+    "contact_hours": {
+        "en": "Studio Hours",
+        "ar": "ساعات العمل"
+    },
+    "contact_hours_val": {
+        "en": "Monday - Friday: 10am - 6pm",
+        "ar": "الاثنين - الجمعة: 10 صباحًا - 6 مساءً"
+    },
+    "form_name": {
+        "en": "Your Name",
+        "ar": "اسمك"
+    },
+    "form_email": {
+        "en": "Your Email",
+        "ar": "بريدك الإلكتروني"
+    },
+    "form_subject": {
+        "en": "Subject",
+        "ar": "الموضوع"
+    },
+    "form_message": {
+        "en": "Message",
+        "ar": "الرسالة"
+    },
+    "form_submit": {
+        "en": "Send Message",
+        "ar": "إرسال الرسالة"
+    },
+    "footer_copyright": {
+        "en": "© 2024 Artist Gallery. All rights reserved.",
+        "ar": "© 2024 معرض الفنان. جميع الحقوق محفوظة."
+    }
+}
