@@ -1,104 +1,212 @@
 [
   {
-    "title": "Art Piece 1",
-    "description": "A beautiful pencil drawing.",
+    "title": "IMG 0011",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_0011.png",
     "image_thumb": "images/thumbnails/IMG_0011.jpg"
   },
   {
-    "title": "Art Piece 2",
-    "description": "This piece explores contrast.",
+    "title": "IMG 0147",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_0147.png",
     "image_thumb": "images/thumbnails/IMG_0147.jpg"
   },
   {
-    "title": "Art Piece 3",
-    "description": "A study in texture and form.",
+    "title": "IMG 0612",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_0612.png",
     "image_thumb": "images/thumbnails/IMG_0612.jpg"
   },
   {
-    "title": "Art Piece 4",
-    "description": "Capturing a fleeting moment.",
+    "title": "IMG 0826",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_0826.PNG",
+    "image_thumb": "images/thumbnails/IMG_0826.jpg"
+  },
+  {
+    "title": "IMG 1066",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_1066.PNG",
+    "image_thumb": "images/thumbnails/IMG_1066.jpg"
+  },
+  {
+    "title": "IMG 1067",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_1067.PNG",
+    "image_thumb": "images/thumbnails/IMG_1067.jpg"
+  },
+  {
+    "title": "IMG 1812",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_1812.png",
+    "image_thumb": "images/thumbnails/IMG_1812.jpg"
+  },
+  {
+    "title": "IMG 1864",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_1864.png",
     "image_thumb": "images/thumbnails/IMG_1864.jpg"
   },
   {
-    "title": "Art Piece 5",
-    "description": "A portrait that conveys deep emotion.",
+    "title": "IMG 2192",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2192.png",
     "image_thumb": "images/thumbnails/IMG_2192.jpg"
   },
   {
-    "title": "Art Piece 6",
-    "description": "An exploration of abstract shapes.",
-    "image_full": "images/IMG_2836.PNG",
-    "image_thumb": "images/thumbnails/IMG_2836.jpg"
+    "title": "IMG 2835",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_2835.PNG",
+    "image_thumb": "images/thumbnails/IMG_2835.jpg"
   },
   {
-    "title": "Art Piece 7",
-    "description": "Detailed architectural drawing.",
+    "title": "IMG 2837",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2837.PNG",
     "image_thumb": "images/thumbnails/IMG_2837.jpg"
   },
   {
-    "title": "Art Piece 8",
-    "description": "Showcasing intricate details.",
+    "title": "IMG 2838",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2838.PNG",
     "image_thumb": "images/thumbnails/IMG_2838.jpg"
   },
   {
-    "title": "Art Piece 9",
-    "description": "Dramatic light and shadow.",
+    "title": "IMG 2839",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2839.PNG",
     "image_thumb": "images/thumbnails/IMG_2839.jpg"
   },
   {
-    "title": "Art Piece 10",
-    "description": "Precision in graphite.",
+    "title": "IMG 2840",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2840.PNG",
     "image_thumb": "images/thumbnails/IMG_2840.jpg"
   },
   {
-    "title": "Art Piece 11",
-    "description": "Delicate and expressive linework.",
+    "title": "IMG 2841",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_2841.PNG",
+    "image_thumb": "images/thumbnails/IMG_2841.jpg"
+  },
+  {
+    "title": "IMG 2842",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2842.PNG",
     "image_thumb": "images/thumbnails/IMG_2842.jpg"
   },
   {
-    "title": "Art Piece 12",
-    "description": "Subtle details in the eyes.",
+    "title": "IMG 2888",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2888.png",
     "image_thumb": "images/thumbnails/IMG_2888.jpg"
   },
   {
-    "title": "Art Piece 13",
-    "description": "Patterns using charcoal.",
+    "title": "IMG 2894",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2894.png",
     "image_thumb": "images/thumbnails/IMG_2894.jpg"
   },
   {
-    "title": "Art Piece 14",
-    "description": "A focus on perspective.",
+    "title": "IMG 2896",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_2896.png",
     "image_thumb": "images/thumbnails/IMG_2896.jpg"
   },
   {
-    "title": "Art Piece 15",
-    "description": "A beautiful pencil drawing.",
+    "title": "IMG 3032",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_3032.PNG",
+    "image_thumb": "images/thumbnails/IMG_3032.jpg"
+  },
+  {
+    "title": "IMG 4547",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_4547.PNG",
     "image_thumb": "images/thumbnails/IMG_4547.jpg"
   },
   {
-    "title": "Art Piece 16",
-    "description": "Contrast between light and shadow.",
+    "title": "IMG 4835",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_4835.png",
+    "image_thumb": "images/thumbnails/IMG_4835.jpg"
+  },
+  {
+    "title": "IMG 4837",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_4837.png",
+    "image_thumb": "images/thumbnails/IMG_4837.jpg"
+  },
+  {
+    "title": "IMG 4838",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_4838.png",
+    "image_thumb": "images/thumbnails/IMG_4838.jpg"
+  },
+  {
+    "title": "IMG 4840",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_4840.png",
+    "image_thumb": "images/thumbnails/IMG_4840.jpg"
+  },
+  {
+    "title": "IMG 4843",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_4843.png",
+    "image_thumb": "images/thumbnails/IMG_4843.jpg"
+  },
+  {
+    "title": "IMG 5183",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_5183.png",
     "image_thumb": "images/thumbnails/IMG_5183.jpg"
   },
   {
-    "title": "Art Piece 17",
-    "description": "A study in texture.",
+    "title": "IMG 5571",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_5571.PNG",
+    "image_thumb": "images/thumbnails/IMG_5571.jpg"
+  },
+  {
+    "title": "IMG 6066",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
     "image_full": "images/IMG_6066.PNG",
     "image_thumb": "images/thumbnails/IMG_6066.jpg"
+  },
+  {
+    "title": "IMG 6898",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_6898.PNG",
+    "image_thumb": "images/thumbnails/IMG_6898.jpg"
+  },
+  {
+    "title": "IMG 7438",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_7438.PNG",
+    "image_thumb": "images/thumbnails/IMG_7438.jpg"
+  },
+  {
+    "title": "IMG 7673",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_7673.png",
+    "image_thumb": "images/thumbnails/IMG_7673.jpg"
+  },
+  {
+    "title": "IMG 7674",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_7674.png",
+    "image_thumb": "images/thumbnails/IMG_7674.jpg"
+  },
+  {
+    "title": "IMG 7675",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_7675.png",
+    "image_thumb": "images/thumbnails/IMG_7675.jpg"
+  },
+  {
+    "title": "IMG 8699",
+    "description": "A beautiful pencil drawing showcasing intricate details and masterful shading techniques.",
+    "image_full": "images/IMG_8699.png",
+    "image_thumb": "images/thumbnails/IMG_8699.jpg"
   }
 ]
