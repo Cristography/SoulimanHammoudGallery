@@ -189,7 +189,7 @@ html[dir="rtl"] .desktop-nav a::after {
 
 #language-toggle {
     background: none;
-    border: 1px solid var(--border-color);
+    border: none;
     color: var(--text-secondary);
     padding: 6px 12px;
     border-radius: 20px;
