@@ -1,5 +1,11 @@
 [
   {
+    "title": "Warrior",
+    "description": "Every warrior carries a story, not just a sword",
+    "image_full": "images/Warrior.jpg",
+    "image_thumb": "images/thumbnails/Warrior.jpg"
+  },
+  {
     "title": "Eyes No.1",
     "description": "Each eye I paint is more than a detail — it is a world of emotions, untold stories, and silent reflections. Through eyes, I capture the soul and invite viewers to see beyond the surface.",
     "image_full": "images/Eyes_1.jpg",
@@ -54,16 +60,34 @@
     "image_thumb": "images/thumbnails/Violence_Against_Women.jpg"
   },
   {
+    "title": "The Mirage",
+    "description": "This striking pencil drawing depicts a woman's face veiled by a contrast of light and shadow, suggesting an internal duality or mystery. A vertical line of dark pine trees cuts through her portrait, creating a haunting double exposure effect that blurs the lines between identity and nature. The title, 'The Mirage' perfectly captures the elusive, dream-like quality of the subject, whose gaze seems lost in a distant thought.",
+    "image_full": "images/The_Mirage.jpg",
+    "image_thumb": "images/thumbnails/The_Mirage.jpg"
+  },
+  {
     "title": "Sharp_Beauty",
     "description": "For this hyper-realistic piece, 'Sharp Beauty' my focus was capturing the raw intensity and striking detail of the human gaze. I deliberately zoomed in to emphasize the power of the eye, using deep shading and contrast to create a fierce, almost confronting emotion. The subtle strands of hair across the face add a layer of natural texture and drama, enhancing the intense, unapologetic beauty of the subject.",
     "image_full": "images/Sharp_Beauty.jpg",
     "image_thumb": "images/thumbnails/Sharp_Beauty.jpg"
   },
   {
+    "title": "One step in the journey",
+    "description": "One step in the journey of bringing this portrait to life",
+    "image_full": "images/One_step_in_the_journey.jpg",
+    "image_thumb": "images/thumbnails/One_step_in_the_journey.jpg"
+  },
+  {
     "title": "Hope",
     "description": "With this piece, titled 'Hope' I aimed to contrast the quiet intensity of internal feeling with an explosion of color and freedom. I rendered the main portrait in stark black and white to focus on the depth and serenity of the subject's closed eyes and deep thought. The vibrant orange butterflies represent the fragile, fluttering sense of renewal and hope that comes with transformation, finally settling on the face as a burst of light in the darkness.",
     "image_full": "images/IMG_2840.jpg",
     "image_thumb": "images/thumbnails/Hope.jpg"
+  },
+  {
+    "title": "Billie Eilish",
+    "description": "In this portrait, I captured Billie Eilish surrounded by the words of her own music, blending her soul with my pencil strokes",
+    "image_full": "images/Billie_Eilish.jpg",
+    "image_thumb": "images/thumbnails/Billie_Eilish.jpg"
   },
   {
     "title": "Blue_Agate",
@@ -90,7 +114,7 @@
     "image_thumb": "images/thumbnails/Peace_Died_in_the_Land_of_Peace.jpg"
   },
   {
-    "title": "Art_is_the_Language_of_the_World",
+    "title": "Art is the Language of the World",
     "description": "In 'Art is the Language of the World' I connected the act of drawing—shown by the giant hand and pencil—with the flow of movement, transforming piano keys into a stage for a delicate ballet dancer. I aimed to visualize how the artist's tool breathes life into the silence, making motion into music.",
     "image_full": "images/Art_is_the_Language_of_the_World.jpg",
     "image_thumb": "images/thumbnails/Art_is_the_Language_of_the_World.jpg"
@@ -148,6 +172,12 @@
     "description": "With this piece, I wanted the lyrics to literally become Adele, letting her own powerful words shape the depth and shadow of her emotional portrait.",
     "image_full": "images/Adele.jpg",
     "image_thumb": "images/thumbnails/Adele.jpg"
+  },
+  {
+    "title": "Eyes No.9",
+    "description": "Each eye I paint is more than a detail — it is a world of emotions, untold stories, and silent reflections. Through eyes, I capture the soul and invite viewers to see beyond the surface.",
+    "image_full": "images/Eyes_9.jpg",
+    "image_thumb": "images/thumbnails/Eyes_9.jpg"
   },
   {
     "title": "On the Sun's Path to a Written Hope",

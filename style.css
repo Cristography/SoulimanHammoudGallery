@@ -1082,7 +1082,7 @@ footer {
 /* --- Small Mobile Styles (max-width: 480px) --- */
 @media (max-width: 480px) {
     :root {
-        --header-height: 65px;
+        --header-height: 70px;
     }
 
     .header-container {
