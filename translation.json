@@ -37,15 +37,15 @@
     },
     "about_subtitle": {
         "en": "My name is Souliman Hammoud — a medical student and visual artist who finds in art a true space for creativity and self-expression.",
-        "ar": "مكرس لفن الرسم بالقلم الرصاص"
+        "ar": "اسمي سليمان حمود — طالب طب وفنان بصري يجد في الفن مساحة حقيقية للإبداع والتعبير عن الذات."
     },
     "about_p1": {
         "en": "Since the age of three, when my family first noticed my talent, art has been more than just a hobby to me; it has been my personal language to connect with the world. I specialize in creative portrait art, blending hyper-realistic details with natural elements to give each piece a unique life and signature style. I also have a deep passion for drawing eyes, as they carry hidden stories and reflect the soul’s beauty.",
-        "ar": "مع التركيز على الجرافيت والفحم، أقوم بإنشاء رسومات مفصلة تجسد جوهر مواضيعي. يستكشف عملي التفاعل بين الضوء والظل، مما يضفي عمقًا وعاطفة على كل قطعة."
+        "ar": "منذ أن كنت في الثالثة من عمري حين لاحظت عائلتي موهبتي، كان الفن أكثر من مجرد هواية بالنسبة لي؛ فقد كان لغتي الشخصية للتواصل مع العالم. أتخصص في فن البورتريه الإبداعي، مزج التفاصيل فائقة الواقعية بالعناصر الطبيعية لإضفاء حياة فريدة وأسلوب مميز على كل عمل. ولدي شغف عميق في رسم العيون، لأنها تحمل قصصًا خفية وتعكس جمال الروح."
     },
     "about_p2": {
         "en": "Beyond painting, I share my passion through creating reels on Facebook, Instagram, and TikTok, while also exploring the world of photography. My greatest dream is for my art to reach people all over the world and to leave a lasting mark in the field of portraiture — spreading a message of peace through every brushstroke.",
-        "ar": "بدأت رحلتي الفنية بقلم رصاص بسيط وكراسة رسم، وتطورت على مر السنين من الممارسة لتطوير أسلوب يؤكد على الواقعية والاهتمام بالتفاصيل. كل رسم هو تأمل في الشكل والملمس."
+        "ar": "بعيدًا عن الرسم، أشارك شغفي من خلال إنشاء مقاطع قصيرة على فيسبوك وإنستغرام وتيك توك، مع استكشاف عالم التصوير الفوتوغرافي أيضًا. حلمي الأكبر هو أن تصل أعمالي الفنية إلى الناس حول العالم وأن أترك بصمة دائمة في مجال البورتريه — ناشرًا رسالة سلام مع كل ضربة فرشاة."
     },
     "about_experience": {
         "en": "Experience",
@@ -60,8 +60,8 @@
         "ar": "المعارض"
     },
     "about_exhibitions_val": {
-        "en": "25+ Shows",
-        "ar": "25+ معرضًا"
+        "en": "5+ Shows",
+        "ar": "5+ معرضًا"
     },
     "about_medium": {
         "en": "Medium",
@@ -92,7 +92,7 @@
         "ar": "موقع الاستوديو"
     },
     "contact_location_val": {
-        "en": "Syria, Misiaf",
+        "en": "Syria, Masiaf",
         "ar": "سوريا، مصياف"
     },
     "contact_email": {
@@ -106,10 +106,6 @@
     "contact_hours": {
         "en": "Studio Hours",
         "ar": "ساعات العمل"
-    },
-    "contact_hours_val": {
-        "en": "Monday - Friday: 10am - 6pm",
-        "ar": "الاثنين - الجمعة: 10 صباحًا - 6 مساءً"
     },
     "form_name": {
         "en": "Your Name",
